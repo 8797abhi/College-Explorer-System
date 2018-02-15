@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Contact Page</title>
+<link rel="stylesheet" href="CSS\style.css">
+<script>
+function MessageBox(){
+	var value;
+	if(confirm("Do You Want To submit the details") == true)
+	{
+		value="Details Submited successfully";
+	}
+	else
+	{
+		value="You pressed Cancel";
+		
+	}
+	document.getElementById("message").innerHTML = value;
+}
+</script>
+</head>
+<body >
+
+<h1>contact page</h1>
+<br>
+<hr>
+<img src="images/download.jpg">
+<hr>
+Do You have any doubts ?<br>
+You can share your details and we will  help u ..
+<br>
+<hr >
+<div class="box">
+<br>
+
+<form method="get" action="#" >
+<div class="align">
+Name: &emsp;&emsp;<input  type=text required>
+<br>
+<br>
+Query:&emsp;&emsp;<textarea  rows=1 cols=20 placeholder="Put your query in the box" required></textarea>
+<br>
+<br>
+<input class="btn"  onclick="MessageBox();" type="submit">
+
+</div>
+</form>
+
+</div>
+<span id="message"></span>
+<p>Want instant reply ? <br> contact us at  </p>
+<ul>
+<li>Facebook</li>
+</ul>
+
+<h2><a href="1.html"><h6> CLICK HERE TO GO BACK</H6></a></h2>
+</body>
+</html>

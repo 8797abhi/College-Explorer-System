@@ -1,0 +1,157 @@
+<html>
+<head>
+<script type="text/javascript" src="js/regjs.js"></script>
+</head>
+<body >
+<hr>
+<table width = "100%" height = "10%" border="2"  > 
+<th ><a href="home.html"><h3>HOME</h3></a> </th>
+<th><a href="about.html"><h3>ABOUT</h3></a></th>
+<th background="images/back.jpg"><a href="college.html"><h3>COLLEGES</h3></a></th>
+<th><a href="contact.html"><h3>CONTACT</h3></a></th>
+<th><a href="signup.html"><h5>SIGN UP</h3></a> </th>
+<th><a href="login.html"><h5>LOGIN</h3></a> </th>
+</table>
+<hr>
+<div  align="center">
+<p align="left" style="margin-left:5%"><font size="5px" color="#0066FF"><br>Please fill in the, asked for information, to create your profile and proceed for the College O Pedia Website.</font></p>
+<form name="contactform" onSubmit="myFunction();" method="post" action="php\oop.php">
+
+  <table width="842" border="0" align="center" >
+     <tr>
+      <td colspan="3" align="center"><br><hr>
+        <font size="10px" class="style2">Account Info</font>
+        <hr>
+      </td>
+    </tr>
+    <tr>	
+      <td width="246" class="style3">User Name:</td>
+      <td width="252"><input type="text" name="usrname" placeholder="User Name" required onKeyPress="showuser();">
+      <div id="txthint" style="color:#FF0000; font-weight:bold"></div>
+      </td>
+
+    </tr>
+	<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr>
+       <tr>
+      <td width="246" class="style3">Email-Id:</td>
+      <td width="252"><input type="email" name="email" placeholder="E-mail Id"  onblur="validate_email();"td>
+      <td width="330">
+	  </td>
+    </tr>
+	<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr>
+     <tr>
+      <td>Password:</td>
+      <td><input type="password" name="pass" placeholder="Password" required onblur="mouseoverPass();"></td>
+      <td><img src="images/images.jpg" width="44" height="25"> </td>
+    </tr>
+	<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr>
+     <tr>
+      <td class="style3">Confirm Password:</td>
+      <td><input type="password" name="repass"  placeholder="Confirm Password" required  onblur="validatePassword();"></td>
+      <td>
+	  <img src="images/images.jpg" width="44" height="25"></td>
+    </tr>
+	
+     <tr>
+      <td colspan="3" align="center"><br><hr>
+        <font size="14px" class="style2">Contact Info</font>
+        <hr>
+      </td>
+     <tr>
+      <td class="style3">Contact Name:</td>
+      <td><input type="text" name="cntct_name"  placeholder="Contact Name" onKeyUp="contact_name_verify();" required></td>
+
+    </tr>
+	<tr>
+	<td >&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr>
+      <tr>
+      <td>Contact Address:</td>
+      <td width="252"><textarea rows = "4" cols = "20" name="addr" placeholder="Address" required="required"></textarea></td>
+
+    </tr>
+	<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr>
+      <tr>
+      <td> Phone Number:</td>
+      <td><input type="text"  name="phone"  onblur="validate_phone();"></td>
+    </tr>
+	<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr>
+     <tr>
+      <td>Gender</td>
+      <td><input  type="radio" name="gender" id="gender" value="Male" checkedS>
+        <label>Male</label>
+<input  type="radio" name="gender" id="gender" value="Female">
+<label>Female</label></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr>
+      <tr>
+      <td>City:</td>
+      <td><select name="city" id="city" onChange="otherF(this.value)" required>
+        <option selected>Select Any</option>
+        <option value="Dehli"  >Delhi</option>
+        <option value="Kolkata"  >Kolkata</option>
+        <option value="Bengaluru"  >Bengaluru</option>
+        <option value="Mumbai"  >Mumbai</option>
+        <option value="Ranchi"  >Ranchi</option>
+        <option value="Patna"  >Patna</option>
+        <option value="Jaipur"  >Jaipur</option>
+        <option value="other"  >Any Other(Please specify)</option>
+       
+      </select></td>
+		<td>
+        <input type="text" name="othert"></td>
+    </tr>
+	<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr>
+      <tr>
+      <td>Pin Code:</td>
+      <td><input type="number" name="pincode" placeholder="Pincode" required></td>
+  
+    </tr>
+	<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr>
+
+    <tr>
+    	<td colspan="3" align="center"><input type="submit">
+   	    <input type="reset" onClick="otherL()"></td>
+    </tr>
+  </table>
+</form>
+<p><br></p>
+</div>
+
+</body>
+</html>
